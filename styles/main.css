@@ -434,3 +434,223 @@ body {
 }
 
 
+@media print {
+    /* FORCE RESET: Override all mobile/screen styles */
+    body {
+        background: white !important;
+        color: black !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 11pt !important;
+    }
+
+    .container {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        grid-template-columns: none !important;
+    }
+
+    /* HIDE UI ELEMENTS */
+    .mobile-header,
+    .menu-toggle,
+    .sidebar-nav,
+    .footer {
+        display: none !important;
+    }
+
+    /* RE-STYLE SIDEBAR AS HEADER */
+    .sidebar {
+        display: grid !important; /* Force grid even if hidden by mobile styles */
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        background: transparent !important;
+        color: black !important;
+        padding: 0 0 2rem 0 !important;
+        margin-bottom: 2rem !important;
+        border-bottom: 2px solid #114B4B !important;
+        box-shadow: none !important;
+        transform: none !important; /* Reset mobile slide-in */
+        
+        /* Layout */
+        grid-template-columns: auto 1fr !important;
+        grid-template-rows: auto auto !important;
+        gap: 1rem 2rem !important;
+        align-items: center !important;
+    }
+
+    /* Profile Image */
+    .profile-image-container {
+        grid-column: 1 !important;
+        grid-row: 1 / span 2 !important;
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Header Text */
+    .sidebar-header {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .name {
+        color: #114B4B !important;
+        font-size: 24pt !important;
+        margin: 0 !important;
+    }
+
+    .title {
+        color: #333 !important;
+        font-size: 12pt !important;
+        margin-top: 0.2rem !important;
+    }
+
+    /* Contact Info */
+    .sidebar-info {
+        grid-column: 2 !important;
+        grid-row: 2 !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 1.5rem !important;
+        margin: 0.5rem 0 0 0 !important;
+    }
+
+    .contact-item {
+        color: black !important;
+        font-size: 10pt !important;
+        margin: 0 !important;
+    }
+
+    .contact-item a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    /* Hide Sidebar Extras */
+    .sidebar-skills-summary,
+    .sidebar-languages {
+        display: none !important;
+    }
+
+    /* MAIN CONTENT RESET */
+    .main-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* SECTIONS */
+    .section {
+        margin-bottom: 2rem !important;
+        page-break-inside: avoid !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .section-title {
+        color: #114B4B !important;
+        font-size: 16pt !important;
+        border-bottom: 1px solid #ccc !important;
+        margin-bottom: 1rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    
+    .section-title::after {
+        display: none !important;
+    }
+
+    /* EXPERIENCE CARDS */
+    .experience-card {
+        border-left: none !important;
+        padding-left: 0 !important;
+        background: none !important;
+    }
+
+    .exp-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        margin-bottom: 0.5rem !important;
+        border-bottom: 1px solid #eee !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    .exp-role {
+        font-size: 14pt !important;
+        color: black !important;
+    }
+
+    .exp-company {
+        font-size: 12pt !important;
+        color: #444 !important;
+    }
+
+    .exp-date {
+        background: none !important;
+        color: #666 !important;
+        padding: 0 !important;
+        font-weight: bold !important;
+    }
+
+    .exp-category {
+        margin-bottom: 1rem !important;
+    }
+    
+    .exp-category h5 {
+        color: black !important;
+        font-size: 10pt !important;
+        text-transform: uppercase !important;
+        margin-bottom: 0.3rem !important;
+    }
+
+    .exp-category ul {
+        margin: 0 !important;
+        padding-left: 1.2rem !important;
+    }
+
+    .exp-category li {
+        margin-bottom: 0.3rem !important;
+        font-size: 10pt !important;
+        color: #333 !important;
+    }
+
+    .exp-category li::before {
+        display: none !important; /* Use standard bullets for print */
+    }
+    
+    .exp-category li {
+        list-style-type: disc !important;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .skill-category {
+        background: none !important;
+        padding: 0 !important;
+        border: none !important;
+        border-top: 1px solid #eee !important;
+    }
+
+    .skill-category h3 {
+        color: black !important;
+        font-size: 11pt !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .skill-list li {
+        color: #333 !important;
+        font-size: 9pt !important;
+    }
+}

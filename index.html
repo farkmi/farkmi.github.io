@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV of Michael Farkas - Senior Backend Developer & DevOps Engineer">
+    <title>Michael Farkas - Senior Backend Developer & DevOps Engineer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-image-container">
+                    <img src="assets/profile.jpg" alt="Michael Farkas" class="profile-image">
+                </div>
+                <h1 class="name">Michael Farkas</h1>
+                <h2 class="title">Senior Backend Developer &<br>DevOps Engineer</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-info">
+                <div class="contact-item">
+                    <span class="icon">✉</span>
+                    <a href="mailto:mail@farkmi.dev">mail@farkmi.dev</a>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>Vienna, Austria</span>
+                </div>
+            </div>
+
+            <div class="sidebar-skills-summary">
+                <h3>Core Stack</h3>
+                <div class="tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">GCP</span>
+                    <span class="tag">Terraform</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-languages">
+                <h3>Languages</h3>
+                <ul class="language-list">
+                    <li>German <span class="level">(Native)</span></li>
+                    <li>English <span class="level">(Fluent)</span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Mobile Header -->
+            <header class="mobile-header">
+                <div class="mobile-logo">MF</div>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            </header>
+
+            <section id="about" class="section fade-in">
+                <h2 class="section-title">About Me</h2>
+                <div class="content-block">
+                    <p>
+                        Senior Backend Developer and DevOps Engineer with a dual focus on technical leadership and infrastructure standardization. 
+                        I specialize in designing robust, reusable software architectures and driving the adoption of "Contract-First" API design.
+                    </p>
+                    <p>
+                        My expertise bridges the gap between development and operations, from maintaining company-wide Open Source backend templates 
+                        to managing complex Kubernetes clusters on GCP. I am passionate about code quality, test automation (preventing "flaky tests"), 
+                        and mentoring junior developers to foster engineering excellence.
+                    </p>
+                </div>
+            </section>
+
+            <section id="experience" class="section fade-in">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-role">Senior Backend Developer & DevOps Engineer</h3>
+                            <h4 class="exp-company">allaboutapps GmbH</h4>
+                        </div>
+                        <span class="exp-date">2019 - Present</span>
+                    </div>
+                    
+                    <div class="exp-content">
+                        <div class="exp-category">
+                            <h5>Software Architecture & Standardization</h5>
+                            <ul>
+                                <li><strong>Core Maintenance:</strong> Responsible for the maintenance and evolution of the company-wide Open Source Backend Template (go-starter).</li>
+                                <li><strong>API Design:</strong> Enforcing "Contract-First" approach using OpenAPI 2.0/3.0 and go-swagger for consistent documentation and code generation.</li>
+                                <li><strong>Database Architecture:</strong> Utilizing PostgreSQL with SQLBoiler for strict type safety and reliability.</li>
+                                <li><strong>Quality Assurance:</strong> Integration of IntegreSQL for isolated, high-performance database testing to eliminate flaky tests.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-category">
+                            <h5>Cloud Infrastructure & DevOps</h5>
+                            <ul>
+                                <li><strong>Cluster Management:</strong> Orchestration of multiple Kubernetes clusters on GCP with 100+ namespaces and Multi-Tenant strategies.</li>
+                                <li><strong>Infrastructure as Code (IaC):</strong> Declarative infrastructure management using Terraform and ArgoCD.</li>
+                                <li><strong>Security & Operations:</strong> Implementation of Network Policies, Ingress Controllers, and comprehensive backup/DR strategies.</li>
+                                <li><strong>Incident Management:</strong> Acting as technical escalation point for 3rd-level support and disaster recovery.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-category">
+                            <h5>Project Highlights</h5>
+                            <ul>
+                                <li><strong>Health-Tech Platform Architecture:</strong> Lead Backend Engineer for a certified medical product. Migrated stack from Node.js to Go for better concurrency and resource efficiency.</li>
+                                <li><strong>System Integration:</strong> Designed bidirectional data exchange with insurance providers (eligibility checks, enrollment).</li>
+                                <li><strong>Machine Learning Integration:</strong> Decoupled python-based ML analysis services from the Go backend using Cloud Run for scalable signal processing.</li>
+                                <li><strong>Legacy Migration:</strong> Implemented dynamic mapping layers to maintain API compatibility during platform re-platforming, ensuring zero downtime for clinical studies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section fade-in">
+                <h2 class="section-title">Technical Skills</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <ul class="skill-list">
+                            <li>Go (Golang)</li>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>API Design (OpenAPI/Swagger)</li>
+                            <li>Microservices</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Infrastructure & Cloud</h3>
+                        <ul class="skill-list">
+                            <li>Kubernetes (GCP/GKE)</li>
+                            <li>Docker</li>
+                            <li>Terraform</li>
+                            <li>ArgoCD</li>
+                            <li>CI/CD Pipelines</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Data & Tools</h3>
+                        <ul class="skill-list">
+                            <li>PostgreSQL</li>
+                            <li>SQLBoiler</li>
+                            <li>IntegreSQL</li>
+                            <li>go-swagger</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section fade-in">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3 class="edu-school">TU Wien</h3>
+                        <span class="edu-date">Ab 2013</span>
+                    </div>
+                    <p class="edu-degree">Bachelorstudium Medizinische Informatik (abgebr.)</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3 class="edu-school">HTL Wiener Neustadt</h3>
+                        <span class="edu-date">2007 - 2012</span>
+                    </div>
+                    <p class="edu-degree">EDVO - Matura</p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Michael Farkas. Hosted on GitHub Pages.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

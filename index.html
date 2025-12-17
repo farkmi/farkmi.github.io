@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV of Michael Farkas - Senior Backend Developer & DevOps Engineer">
     <title>Michael Farkas - Senior Backend Developer & DevOps Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/links.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -80,8 +82,7 @@
                     </p>
                     <p>
                         My expertise bridges the gap between development and operations, from maintaining company-wide Open Source backend templates 
-                        to managing complex Kubernetes clusters on GCP. I am passionate about code quality, test automation (preventing "flaky tests"), 
-                        and mentoring junior developers to foster engineering excellence.
+                        to managing complex Kubernetes clusters on GCP. A key strength lies in translating complex customer requirements into pragmatic technical solutions, especially in resource-constrained "startup" environments where balancing feature velocity with long-term maintainability is crucial.
                     </p>
                 </div>
             </section>
@@ -102,27 +103,26 @@
                         <div class="exp-category">
                             <h5>Software Architecture & Standardization</h5>
                             <ul>
-                                <li><strong>Core Maintenance:</strong> Responsible for the maintenance and evolution of the company-wide Open Source Backend Template (go-starter).</li>
+                                <li><strong>Core Maintenance:</strong> Responsible for the maintenance and evolution of the company-wide Open Source Backend Template <a href="https://github.com/allaboutapps/go-starter" target="_blank">(go-starter)</a>.</li>
                                 <li><strong>API Design:</strong> Enforcing "Contract-First" approach using OpenAPI 2.0/3.0 and go-swagger for consistent documentation and code generation.</li>
                                 <li><strong>Database Architecture:</strong> Utilizing PostgreSQL with SQLBoiler for strict type safety and reliability.</li>
-                                <li><strong>Quality Assurance:</strong> Integration of IntegreSQL for isolated, high-performance database testing to eliminate flaky tests.</li>
+                                <li><strong>Quality Assurance:</strong> Integration of <a href="https://github.com/allaboutapps/integresql" target="_blank">IntegreSQL</a>, an open-source tool we maintain that provides isolated PostgreSQL template databases for high-performance, flake-free testing.</li>
                             </ul>
                         </div>
 
                         <div class="exp-category">
                             <h5>Cloud Infrastructure & DevOps</h5>
                             <ul>
-                                <li><strong>Cluster Management:</strong> Orchestration of multiple Kubernetes clusters on GCP with 100+ namespaces and Multi-Tenant strategies.</li>
+                                <li><strong>Multi-Tenant Cluster Strategies:</strong> Orchestrating shared-use Kubernetes clusters on GCP to efficiently host diverse customer projects while ensuring isolation via Network Policies and dedicated nodepools where required.</li>
                                 <li><strong>Infrastructure as Code (IaC):</strong> Declarative infrastructure management using Terraform and ArgoCD.</li>
-                                <li><strong>Security & Operations:</strong> Implementation of Network Policies, Ingress Controllers, and comprehensive backup/DR strategies.</li>
-                                <li><strong>Incident Management:</strong> Acting as technical escalation point for 3rd-level support and disaster recovery.</li>
+                                <li><strong>Operations & Stability:</strong> Implementation of comprehensive backup/DR strategies and acting as technical escalation point for 3rd-level support.</li>
                             </ul>
                         </div>
 
                         <div class="exp-category">
                             <h5>Project Highlights</h5>
                             <ul>
-                                <li><strong>Health-Tech Platform Architecture:</strong> Lead Backend Engineer for a certified medical product. Migrated stack from Node.js to Go for better concurrency and resource efficiency.</li>
+                                <li><strong>Health-Tech Platform Architecture:</strong> Lead Backend Engineer for a certified medical product. Built from scratch using our <a href="https://github.com/allaboutapps/go-starter" target="_blank">Go starter template</a>, enabling high concurrency and resource efficiency compared to previous Node.js stacks.</li>
                                 <li><strong>System Integration:</strong> Designed bidirectional data exchange with insurance providers (eligibility checks, enrollment).</li>
                                 <li><strong>Machine Learning Integration:</strong> Decoupled python-based ML analysis services from the Go backend using Cloud Run for scalable signal processing.</li>
                                 <li><strong>Legacy Migration:</strong> Implemented dynamic mapping layers to maintain API compatibility during platform re-platforming, ensuring zero downtime for clinical studies.</li>
@@ -162,10 +162,10 @@
                         <h3>Data & Tools</h3>
                         <ul class="skill-list">
                             <li>PostgreSQL</li>
-                            <li>SQLBoiler</li>
-                            <li>IntegreSQL</li>
-                            <li>go-swagger</li>
-                            <li>Git/GitHub</li>
+                            <li>Docker / Docker Compose</li>
+                            <li>CI/CD (Drone/Woodpecker)</li>
+                            <li>Ansible / Linux Server</li>
+                            <li>Git / GitHub</li>
                         </ul>
                     </div>
                 </div>
